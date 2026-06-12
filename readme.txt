@@ -7,9 +7,9 @@ Overview
 --------
 CoalBench is a bilingual synthetic dataset suite designed for large language model (LLM) post-training in the coal mining domain. The dataset is generated through a unified pipeline that constructs three aligned dataset formats:
 
-1. CoalBench-SFT  : Supervised Fine-Tuning dataset
-2. CoalBench-DPO  : Direct Preference Optimization dataset
-3. CoalBench-RaR  : Rubric-as-Reward dataset
+1. CoalBench-SFT: Supervised Fine-Tuning dataset
+2. CoalBench-DPO: Direct Preference Optimisation dataset
+3. CoalBench-RaR: Rubric-as-Reward dataset
 
 The English and Chinese subsets are generated using the same workflow but from language-specific source materials and prompts.
 
@@ -51,7 +51,7 @@ Schema:
 }
 
 Description:
-Question-answer pairs for supervised fine-tuning. The answer field correspond to answer2 generated under weak supervision using class and reference-answer guidance.
+Question-answer pairs for supervised fine-tuning. The answer field corresponds to answer2 generated under weak supervision using class and reference-answer guidance.
 
 
 DPO Datasets
@@ -69,7 +69,7 @@ Schema:
 }
 
 Description:
-Preference pairs for Direct Preference Optimization (DPO). The chosen response corresponds to answer2, while the rejected response corresponds to answer1.
+Preference pairs for Direct Preference Optimisation (DPO). The chosen response corresponds to answer 2, while the rejected response corresponds to answer 1.
 
 
 RaR Datasets
@@ -87,7 +87,7 @@ Schema:
 
 Description:
 Rubric-as-Reward (RaR) dataset containing structured evaluation criteria associated with each question.
-
+The prompt template and rubric structure are adapted from OpenAI HealthBench.
 
 Rubric Structure
 ----------------
