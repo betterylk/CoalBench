@@ -12,7 +12,7 @@ Languages
 
 Directory Layout
 ----------------
-A/
+CoalBench/
   CoalBench/
     Final dataset files for full data, SFT, DPO, and RaR training.
 
