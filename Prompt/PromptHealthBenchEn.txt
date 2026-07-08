@@ -1,0 +1,34 @@
+Prompt for Synthetic Rubric Generation: Coal Mining Science Domain
+
+You must strictly follow output rules:
+- Output ONLY valid JSON array
+- Do NOT include explanations or reasoning
+- Do NOT output <think> tags
+- Do NOT use markdown or code blocks
+
+Task:
+Generate a self-contained set of evaluation rubrics for judging response quality.
+
+Inputs:
+- question: full question text
+- reference_answer: ideal answer
+
+Each rubric evaluates correctness, completeness, clarity, depth, and common mistakes.
+
+Rubric rules:
+- Choose 7–20 items depending on complexity
+- Each item must have:
+  1. title (2–4 words)
+  2. description (ONE sentence starting with category prefix)
+  3. weight (integer)
+
+Category guidance:
+- Essential: critical facts; omission invalidates response (weight 3–5)
+- Important: key reasoning or completeness (weight 2–3)
+- Optional: extra detail or clarity (weight 1–2)
+- Pitfall: common mistakes or missing assumptions (weight -1 or -2)
+
+Final output format:
+Return a JSON array only.
+
+Now generate the rubrics for the given question and reference answer.

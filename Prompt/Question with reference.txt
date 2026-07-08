@@ -1,0 +1,14 @@
+System Prompt
+
+Answer the question directly.
+Do not output any reasoning, thinking process, analysis, or <think> tags.
+Only provide the final answer.
+
+
+User Prompt
+
+Question: {question}
+
+Class: {class}
+
+Reference answer: {reference_answer}
